@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EverAI</title>
+  <link rel="stylesheet" href="chat.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;400&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- left div  -->
+  <div class="left-div">
+    <h1>EverAI</h1>
+    <hr>
+    <div class="recentchats">
+      <div class="recentchat"><p><%=name%></p><svg class="recentchatimg1" xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+        <path d="M1.35355 0.1661C1.15829 -0.0291622 0.841709 -0.0291622 0.646447 0.1661C0.451184 0.361362 0.451184 0.677945 0.646447 0.873207L1.35355 0.1661ZM10.6464 10.8732L11 11.2268L11.7071 10.5197L11.3536 10.1661L10.6464 10.8732ZM0.646447 0.873207L10.6464 10.8732L11.3536 10.1661L1.35355 0.1661L0.646447 0.873207Z" fill="white"/>
+        <line x1="20.7764" y1="0.707107" x2="11.2234" y2="10.2601" stroke="white" stroke-linecap="round"/>
+      </svg>
+     </div>
+    </div>
+
+    <div class="roles">
+      <div class="role"><img class="roleimg"src="img/coding.png" alt=""><p>Developer</p></div>
+      <div class="role"><img class="roleimg"src="img/teacher.png" alt=""><p>Teacher</p></div>
+      <div class="role"><img class="roleimg"src="img/students.png" alt=""><p>Student</p></div>
+      <div class="role"><img class="roleimg"src="img/copywriter.png" alt=""><p>Content Writer</p></div>
+      <div class="role"><img class="roleimg"src="img/doctor.png" alt=""><p>Doctor</p></div>
+      <div class="role"><img class="roleimg"src="img/engineers.png" alt=""><p>Engineer</p></div>
+    </div>
+    <div class="language">
+      <div class="lang"><img class="roleimg2" src="img/hindu.png" alt=""><p>MARATHI</p></div>
+      <div class="lang"><img class="roleimg2" src="img/united-kingdom.png" alt=""><p>MARATHI</p></div>
+    </div>
+    <form action="/" method="post"><button id="newchat"><img src="img/plus.png" alt="+"><p>New Chat</p></button></form>
+  </div>
+
+  <!-- right div  -->
+  <div class="right-div"> 
+
+    <!-- question and ans profile  -->
+    <div class="profile">
+      <div class="question"><img src="img/sushant.jpeg" style="width: 40px; border-radius: 50%;" alt="profile"><div class="q"><p id="impquestion"><%=name%></p></div>
+      <svg class="recentchatimg5" xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+        <path d="M1.35355 0.1661C1.15829 -0.0291622 0.841709 -0.0291622 0.646447 0.1661C0.451184 0.361362 0.451184 0.677945 0.646447 0.873207L1.35355 0.1661ZM10.6464 10.8732L11 11.2268L11.7071 10.5197L11.3536 10.1661L10.6464 10.8732ZM0.646447 0.873207L10.6464 10.8732L11.3536 10.1661L1.35355 0.1661L0.646447 0.873207Z" fill="white"/>
+        <line x1="20.7764" y1="0.707107" x2="11.2234" y2="10.2601" stroke="white" stroke-linecap="round"/> 
+      </svg></div>
+      <div class="answer"><p><%= answer %></p></div>
+    </div>
+
+<!-- Welcome box  -->
+    <div class="wellcome">
+      <h1>Welcome to EverAI</h1>
+      <p>ChatBot: Your AI conversation partner for knowledge, creativity, and instant assistance. Elevate your chats and boost productivity with AI-powered insights and solutions</p>
+    </div>
+      <div class="cursel">
+        <div class="curselbox curselboximg1">
+          <h2>Create</h2>
+          <ul>
+            <li>Tag Lines</li>
+            <li>Blogs</li>
+            <li>Reports</li>
+          </ul>
+        </div>
+        <div class="curselbox curselboximg2">
+          <h2>Explore</h2>
+          <ul>
+            <li>Galaxy</li>
+            <li>Culture</li>
+            <li>Places</li>
+          </ul>
+        </div>
+        <div class="curselbox curselboximg3">
+          <h2>Compose</h2>
+          <ul>
+            <li>Email</li>
+            <li>Poem</li>
+            <li>Stories</li>
+          </ul>
+        </div>
+        <div class="curselbox curselboximg4">
+          <h2>Edit</h2>
+          <ul>
+            <li>Articles</li>
+            <li>Code</li>
+            <li>Email</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="input-box"> -->
+        <form action="/sushant" method="post" id="myForm">
+          <input type="text" id="myInput" name="myInput">
+
+          <svg id="submitimg" xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 40 35" fill="none">
+            <path d="M0 0.0723267L39.0305 15.4106L1.03389 34.8512L11.0435 16.4284L0 0.0723267Z" fill="#777777"/>
+          </svg>
+          
+        </form>
+      <!-- </div> -->
+   </div>
+   
+   
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>

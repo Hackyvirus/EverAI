@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>EverAI-Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="introtoAI">
+      <div class="logo">
+        <h1>EverAI</h1>
+        <hr />
+      </div>
+      <div class="intro">
+        <p>AI powered tool for your every need</p>
+        <h2>ChatBot helps you to <span id="works"></span></h2>
+      </div>
+      <div class="login-options">
+        <button id="login" class="button1"><span>Login Up</span></button>
+        <button id="signup" class="button2"><span>Sign Up</span></button>
+      </div>
+    </div>
+
+    <img class="Ellipse1" src="img/Ellipse 2.svg" alt="Image" />
+    <div class="login-box">
+      <h2>Sign Up</h2>
+      <div class="userpasslogin">
+        <form autocomplete="off" action="/" method="post">
+          <input type="text" id="name" name="name" placeholder="User Name" />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+          <input id="submit" type="submit" value="Confirm" />
+        </form>
+      </div>
+      <div class="anotherwaystologin">
+        <h2>Sign Up Using</h2>
+        <div class="loginimg">
+          <img class="signupimg" src="img/Goggle coloured logo.png" alt="Google" />
+          <img class="signupimg" src="img/facebook.png" alt="Facebook" />
+          <img class="signupimg" src="img/twitter(1).png" alt="Twitter" />
+        </div>
+      </div>
+    </div>
+    <img class="Ellipse2" src="img/Ellipse 2.svg" alt="Image" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      let typed = new Typed("#works", {
+        strings: [
+          "Edit Articles",
+          "Edit Code",
+          "Edit Email",
+          "Create Tag Lines",
+          "Create Blogs",
+          "Create Reports",
+          "Explore Galaxy",
+          "Explore Culture",
+          "Explore Places",
+          "Compose Email",
+          "Compose Poem",
+          "Compose Stories",
+        ],
+        typeSpeed: 100,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
