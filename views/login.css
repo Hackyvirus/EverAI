@@ -230,20 +230,20 @@ form input {
 }
 
 form input:focus {
-      border-bottom: 2px solid white;
-      outline: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
 }
 #submit {
-	text-align: center;
-	width: 150px;
-	height: 45px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 40px;
-	font-size: 25px;
-	color: #fff;
-	cursor: pointer;
-	background: transparent;
-	border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  height: 45px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
 }
 
 .anotherwaystologin {
@@ -263,4 +263,48 @@ form input:focus {
   font-family: Dhyana;
   font-weight: lighter;
   word-wrap: break-word;
+}
+.comingsoon {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.sorrytext  {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  height: 30vh;
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: white;
+  font-family: dhyana, sans-serif;
+}
+.sorrytext h2{
+  font-size: 3em;
+}
+.sorryimg {
+  margin: auto;
+  width: 90%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1050px) {
+  .introtoAI,
+  .login-box,
+  .Ellipse1,
+  .Ellipse2 {
+    display: none;
+  }
+
+  .comingsoon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .sorryimg {
+    margin: auto;
+    width: 70%;
+  }
 }
