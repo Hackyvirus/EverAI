@@ -54,17 +54,20 @@ body {
 }
 
 .roles {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-family: Dhyana;
+  margin: auto;
   margin-top: 25px;
 }
 .role {
   display: flex;
   cursor: pointer;
   align-items: center;
+  border: 1px solid rgba(97, 97, 97, 0.79);
+  border-radius: 5px;
 }
 
 .roleimg {
@@ -137,7 +140,7 @@ body {
 }
 
 .left-div hr {
-  width: 47%;
+  width: 51%;
   height: 4px;
   border-radius: 20px;
   border: 1px solid #626f4d;
@@ -278,10 +281,11 @@ button img {
   background-size: cover;
 }
 .curselboximg1 {
-  background-image: url("img/Starynight.jpeg");
+  background-image: url("img/go1qqu1h.bmp");
   border-radius: 62px;
   height: 100%;
   background-size: cover;
+  background-position: bottom;
 }
 .curselboximg2 {
   background-image: url("img/Mountain1.png");
@@ -291,7 +295,7 @@ button img {
   background-size: cover;
 }
 .curselboximg3 {
-  background-image: url("img/Starynight.jpeg");
+  background-image: url("img/31pxqavd.bmp");
   border-radius: 62px;
   height: 100%;
   background-size: cover;
