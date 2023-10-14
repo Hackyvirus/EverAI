@@ -9,5 +9,5 @@ document.getElementById("signup").addEventListener("click", () => {
         document.querySelector(".login-box").style.display = "block"
 })
 
-alert("This is Beta Version, So we have desabled some of features like 'Roles' and 'Languages' we are going to enable them when we are lauching it for Tablet and Mobiles.")
+alert("This is Beta Version, So we have disabled some of features like 'Roles' and 'Languages' we are going to enable them when we are launching it for Tablet and Mobiles.")
 
