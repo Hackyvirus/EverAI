@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=League+Spartan:wght@100;200;400&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -269,19 +270,21 @@ form input:focus {
   width: 100%;
   height: 100%;
 }
-.sorrytext  {
-  width: 90%;
-  text-align: center;
-  margin: auto;
-  height: 30vh;
-  display:flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  color: white;
-  font-family: dhyana, sans-serif;
+.sorrytext {
+	width: 95vw;
+  font-family: 'Inter', sans-serif;
+	text-align: center;
+	margin: 2px auto;
+	height: 50vh;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	color: white;
+	font-family: Inter, sans-serif;
 }
 .sorrytext h2{
   font-size: 3em;
+  font-family: 'Inter', sans-serif;
 }
 .sorryimg {
   margin: auto;
@@ -299,12 +302,12 @@ form input:focus {
   .comingsoon {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     height: 100vh;
   }
   .sorryimg {
-    margin: auto;
+    margin: 2rem auto 0rem;
     width: 70%;
   }
 }
