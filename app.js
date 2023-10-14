@@ -51,7 +51,6 @@ app.post("/sushant", (req, res) => {
     try {
       const marathiAnswer = await translateToMarathi(answer1);
       res.render("chat", { name: question, answer: marathiAnswer });
-      console.log(marathiAnswer);
     }
     catch (error) {
       console.log(error);
@@ -67,5 +66,5 @@ app.post("/", (req, res) => {
 app.use(express.static(__dirname + '/views/'));
 
 app.listen(process.env.PORT || 4000, () => {
-  console.log("Server is started on port " + 4000);
+  console.log("Server is started on port " + process.env.PORT);
 });
