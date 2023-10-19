@@ -37,6 +37,24 @@ app.post("/", (req, res) => {
 });
 
 
+app.post("/kaushik", (req, res) => {
+  var question = req.body.myInput;
+  async function mainfuck() {
+    const openai = new OpenAI({ apiKey: process.env.apiKey })
+    let answer = await openai.chat.completions.create({
+      messages: [{ role: "assistant", content: question }],
+      model: 'gpt-3.5-turbo',
+      max_tokens: 4000,
+      temperature: 0
+    })
+    const answer2 = answer.choices[0].message.content
+    res.render("chat", { name: question, answer: answer2 });
+
+  }
+  mainfuck()
+
+});
+
 app.post("/sushant", (req, res) => {
   var question = req.body.myInput;
   async function mainfuck() {
@@ -59,6 +77,8 @@ app.post("/sushant", (req, res) => {
   mainfuck()
 
 });
+
+
 app.post("/", (req, res) => {
   res.sendFile(__dirname + "/views/");
 });

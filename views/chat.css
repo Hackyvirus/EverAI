@@ -36,8 +36,9 @@ body {
   margin: 11px;
 }
 .right-div {
-  width: 80%;
-  margin: 15px;
+	width: 80%;
+	margin: 15px;
+	overflow: scroll;
 }
 
 .right-div h1 {
@@ -54,22 +55,25 @@ body {
 }
 
 .roles {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-family: Dhyana;
-  margin-top: 25px;
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-family: Dhyana;
+	margin: auto;
+	margin-top: 25px;
 }
 .role {
-  display: flex;
-  cursor: pointer;
-  align-items: center;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	border: 1px solid rgba(97, 97, 97, 0.79);
+	border-radius: 5px;
 }
 
 .roleimg {
-  width: 30px;
-  margin: 0px 22px;
+	width: 30px;
+	margin: 0px 22px;
 }
 .roleimg2 {
   margin: 0px 17px;
